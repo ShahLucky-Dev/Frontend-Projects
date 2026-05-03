@@ -7,14 +7,63 @@
     <link rel="stylesheet" href="Portfolio.css" />
   </head>
   <body>
-    <div class="head">
-      <div class="name">Lucky-Dev</div>
-      <div class="link">
-        <a href="">Twitter</a>
-        <a href="">Instagram</a>
-        <a href="">Linked in</a>
-        <a href="">Projects</a>
+    <header>
+      <nav>
+        <div class="left">Shah Lucky</div>
+        <div class="right">
+          <ul>
+            <li><a href="https://x.com/ShahLucky444">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lucky-shah-013117269?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                >Linked-in</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/ShahLucky-Dev/Practice-Clone"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="firstsection">
+      <div class="first">
+        Hi, My name is <span>Lucky</span> and I am a Passionate
+        <span id="element"></span>
       </div>
-    </div>
+      <div class="second">
+        <img src="IMG20260101152113.jpg" alt="shah lucky" />
+      </div>
+    </section>
+    <hr />
+    <section class="secondsection">
+      <div class="detail">
+        <p>What i Have Done So Far</p>
+        <h1>Work Expirence</h1>
+        <hr />
+      </div>
+      <br />
+      <div class="box">
+        <div class="b1">HTML</div>
+        <div class="b1">CSS</div>
+        <div class="b1">JAVA SCRIPT</div>
+        <div class="b1">SQL</div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Video Editor",
+          "Website Designer",
+          "Full Stack Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
