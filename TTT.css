@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  height: 80px;
+  background-color: rgb(45, 45, 238);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+.gamecontainer {
+  background-color: rgb(94, 168, 234);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row: inherit;
+}
