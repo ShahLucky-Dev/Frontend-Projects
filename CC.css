@@ -13,3 +13,71 @@ body {
 
 form {
 }
+
+.container {
+  border-radius: 5%;
+  margin: 20px;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.7rem;
+  border: 1.5px solid lightgray;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+form select {
+  border: none;
+}
+
+.msg {
+  font-size: 1.1rem;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: burlywood;
+  color: #fff;
+  border-radius: 0.7rem;
+  border: 1.5px solid lightgray;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.dropdown i {
+  margin-right: 1rem;
+}
+.from {
+  margin-right: 1rem;
+}
+.to {
+  margin-left: 1rem;
+}
+
+.select-container img {
+  display: flex;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
