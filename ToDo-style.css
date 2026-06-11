@@ -2,10 +2,27 @@ button {
   cursor: pointer;
 }
 
-li {
+ul {
   background-color: orange;
+  padding: 5px;
 }
 
 .container {
   background-color: bisque;
+}
+
+.msg {
+  margin-top: 10px;
+}
+
+ul button {
+  margin-left: 5px;
+}
+
+h2 {
+  color: rgb(158, 102, 0);
+  background-color: rgb(229, 244, 242);
+  border: 1px solid white;
+  border: transparent;
+  text-align: center;
 }

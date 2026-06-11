@@ -6,7 +6,13 @@ btn.addEventListener("click", () => {
 
 let list = document.querySelector("#list");
 btn.addEventListener("click", () => {
-  let li = document.createElement("li");
-  li.innerHTML = inp.value;
-  list.appendChild(li);
+  let ul = document.createElement("ul");
+  let btn = document.createElement("button");
+  btn.innerText = "Delete";
+  ul.innerHTML = inp.value;
+  ul.appendChild(btn);
+  list.appendChild(ul);
+  btn.addEventListener("click", () => {
+    ul.remove();
+  });
 });
