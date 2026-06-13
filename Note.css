@@ -8,9 +8,51 @@ body {
   font-family: cursive;
 }
 
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head i {
+  cursor: pointer;
+}
+
+#cross {
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.newNote {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mynote {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(109, 249, 249);
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: rgb(0, 167, 173);
+  color: #fff;
+  border-radius: 10%;
+  border: 0.75px solid rgb(0, 167, 173);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15%;
+  margin-left: 32%;
+}
 .addnew {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: rgb(109, 249, 249);
   border-radius: 15%;
   margin-left: 15px;
@@ -19,16 +61,17 @@ body {
 
 .addnew h1 {
   font-size: 18px;
+  margin-left: 7%;
 }
 
 .addnew i {
-  text-align: center;
-  justify-content: center;
-  display: flex;
   font-size: 25px;
+  margin-left: 40%;
+  margin-top: 30%;
 }
 
 .note {
+  padding: 20px;
   margin-left: 40%;
   margin-top: 35px;
   width: 300px;
@@ -37,6 +80,7 @@ body {
   border: 1px solid rgb(0, 154, 154);
   border-radius: 4%;
   display: none;
+  position: fixed;
 }
 
 .note input,
@@ -44,6 +88,10 @@ textarea {
   width: 100%;
   border-radius: 3%;
   border: 0.75px solid rgb(0, 167, 173);
+}
+
+.note input {
+  font-weight: bold;
 }
 
 .note textarea {
