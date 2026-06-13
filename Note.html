@@ -14,18 +14,25 @@
     <title>Note App</title>
   </head>
   <body>
-    <div class="addnew">
-      <h1>Add New Note</h1>
-      <i class="fa-regular fa-square-plus"></i>
-      <!--<button id="add"></button>-->
+    <div class="container">
+      <div class="addnew">
+        <i class="fa-regular fa-square-plus"></i>
+        <h1>Add New Note</h1>
+      </div>
+      <div class="newNote"></div>
     </div>
+
     <div class="note">
-      <h3>Title</h3>
-      <input type="text" value="" id="" placeholder="Add Title .." />
+      <div class="head">
+        <h3>Title</h3>
+        <i class="fa-solid fa-x" id="cross"></i>
+      </div>
+
+      <input type="text" value="" id="title" placeholder="Add Title .." />
       <h3>Description</h3>
       <textarea
         value=""
-        id=""
+        id="Description"
         rows="10"
         cols="10"
         placeholder="''Add Description..."
