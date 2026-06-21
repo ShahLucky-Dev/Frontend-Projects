@@ -1,25 +1,31 @@
 let btn = document.getElementById("btn");
-let inp = document.querySelector("#inp");
+let inp = document.getElementById("inp");
+let list = document.getElementById("list");
+
 btn.addEventListener("click", () => {
-  console.log(inp.value);
+  if (inp.value === "") {
+    alert("enter text");
+    return;
+  }
+  let li = document.createElement("li");
+  let dlt = document.createElement("button");
+  let done = document.createElement("button");
+  dlt.classList.add("delete");
+  done.classList.add("done");
+  done.innerText = "Done";
+  dlt.innerText = "Delete";
+  list.appendChild(li);
+  li.innerText = inp.value;
+  li.appendChild(done);
+  li.appendChild(dlt);
+
+  inp.value = "";
 });
 
-let list = document.querySelector("#list");
-btn.addEventListener("click", () => {
-  let cb = document.createElement("input");
-  cb.type = "checkbox";
-  let ul = document.createElement("ul");
-  let btn = document.createElement("button");
-
-  btn.innerText = "Delete";
-  ul.appendChild(cb);
-  ul.innerHTML = inp.value;
-
-  ul.appendChild(btn);
-  list.appendChild(ul);
-  btn.addEventListener("click", () => {
-    ul.remove();
-  });
+list.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete")) {
+    e.target.parentElement.remove();
+  } else if (e.target.classList.contains("done")) {
+    e.target.parentElement.classList.toggle("completed");
+  }
 });
-
-localStorage.setItem(inp.value);
