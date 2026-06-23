@@ -2,11 +2,20 @@ let btn = document.getElementById("btn");
 let inp = document.getElementById("inp");
 let list = document.getElementById("list");
 
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+tasks.forEach((task) => {
+  let li = document.createElement("li");
+  li.innerText = task;
+  list.appendChild(li);
+});
 btn.addEventListener("click", () => {
   if (inp.value === "") {
     alert("enter text");
     return;
   }
+  tasks.push(inp.value);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   let li = document.createElement("li");
   let dlt = document.createElement("button");
   let done = document.createElement("button");
